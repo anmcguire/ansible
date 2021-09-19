@@ -1,0 +1,13 @@
+---
+ - name: Playbook to install code
+   hosts: localhost
+   become: true
+   tasks: 
+    - name: Ansible snap install code
+      community.general.snap:
+        name: code
+        state: present
+    - name: Ansible snap install teams
+      community.general.snap:
+        name: teams
+        state: present

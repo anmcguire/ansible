@@ -1,0 +1,41 @@
+---
+ - name: Playbook to install packages
+   hosts: localhost
+   become: true
+   tasks: 
+    - name: Ansible apt install fonts-terminus
+      apt:
+        name: fonts-terminus
+        state: present
+    - name: Ansible apt install git
+      apt:
+        name: git
+        state: present
+    - name: Ansible apt install g++
+      apt:
+        name: g++
+        state: present
+    - name: Ansible apt install gcc
+      apt:
+        name: gcc
+        state: present
+    - name: Ansible apt install nmap
+      apt:
+        name: nmap
+        state: present
+    - name: Ansible apt install sagemath
+      apt:
+        name: sagemath
+        state: present
+    - name: Ansible apt install texlive
+      apt:
+        name: texlive
+        state: present
+    - name: Ansible apt install texmaker
+      apt:
+        name: texmaker
+        state: present
+    - name: Ansible apt install tmux
+      apt:
+        name: tmux
+        state: present
