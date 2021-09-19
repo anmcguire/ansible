@@ -6,6 +6,7 @@
     - name: Ansible snap install code
       community.general.snap:
         name: code
+        classic: yes
         state: present
     - name: Ansible snap install teams
       community.general.snap:
